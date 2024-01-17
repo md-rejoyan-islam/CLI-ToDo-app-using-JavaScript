@@ -48,6 +48,18 @@ To update a task:
 node src/index.js update --id='task_id' --text="updated_text"
 ```
 
+To show next task:
+
+```javascript
+node src/index.js next
+```
+
+To find any task:
+
+```javascript
+node src/index.js find --text="task_name"
+```
+
 To display all tasks:
 
 ```javascript

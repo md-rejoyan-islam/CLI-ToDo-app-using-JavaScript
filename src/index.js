@@ -40,7 +40,7 @@ const filePath = path.join(__dirname, fileName);
       break;
     case NEXT:
       const item = todo.next();
-      console.log(`Next task : ${item.text} - ${item.created}`);
+      console.log(`Next task : ${item.text} - ${item.created}`.bgBlue.white);
       break;
     case LIST:
       const list = todo.list();
@@ -57,10 +57,11 @@ const filePath = path.join(__dirname, fileName);
       const items = todo.find(argv.text);
       if (items) {
         console.log(
-          `Found item: ${items.text} - ${items.id}- ${items.created}`
+          `Found item: ${items.text} - ${items.id}- ${items.created}`.bgBlue
+            .white
         );
       } else {
-        console.log("Task not found");
+        console.log("Task not found".bgRed.white);
       }
       break;
     default:
