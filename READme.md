@@ -11,13 +11,13 @@ To install the Todo CLI application, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/todo-cli-app.git
+   https://github.com/md-rejoyan-islam/CLI-ToDo-app-using-JavaScript
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd todo-cli-app
+   cd project
    ```
 
 3. Install the dependencies:
@@ -33,23 +33,30 @@ Here’s how you can use the Todo CLI application:
 To add a new task:
 
 ```javascript
-node app.js add "Task description
+node src/index.js add --text="task_name"
 ```
 
 To remove a task:
 
 ```javascript
-node app.js remove "Task ID"
+node src/index.js done
 ```
 
 To update a task:
 
 ```javascript
-node app.js update "Task ID" "New task description"
+node src/index.js update --id='task_id' --text="updated_text"
 ```
 
 To display all tasks:
 
 ```javascript
-node app.js show
+node src/index.js list
 ```
+
+## Dependencies
+
+This application uses the following dependencies:
+
+<code>yargs</code> : A command-line argument parser that makes it easy to write user-friendly CLI applications. <br>
+<code>colors</code> : Use for terminal color
